@@ -2,14 +2,20 @@ import webbrowser
 from pynput.keyboard import Key, Controller
 import time
 
-webbrowser.open('http://google.com')
-keyboard = Controller()
+links = open("links.txt")
+for x in links:
+    x = x.rstrip()
+    print("hi")
+    webbrowser.open(url=x)
 
-time.sleep(1)
-num_of_tabs = 1
-for x in range(0, num_of_tabs):
+keyboard = Controller()
+numTabs = len(open("links.txt").readlines())
+
+links.close()
+
+for y in range(0, numTabs):
+    time.sleep(0.5)
     keyboard.press(Key.cmd)
     keyboard.press('w')
-    time.sleep(1)
     keyboard.release(Key.cmd)
     keyboard.release('w')
