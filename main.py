@@ -5,7 +5,6 @@ import time
 links = open("links.txt")
 for x in links:
     x = x.rstrip()
-    print("hi")
     webbrowser.open(url=x)
 
 keyboard = Controller()
