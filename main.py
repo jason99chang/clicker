@@ -18,3 +18,7 @@ for y in range(0, numTabs):
     keyboard.press('w')
     keyboard.release(Key.cmd)
     keyboard.release('w')
+
+print("Sucessfully clicked then closed all links")
+
+time.sleep(3)
