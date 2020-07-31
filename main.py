@@ -32,5 +32,3 @@ else:
         keyboard.release('w')
 
 print("Sucessfully clicked then closed all links")
-
-time.sleep(3)
